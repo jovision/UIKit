@@ -20,4 +20,12 @@
         <item name="android:paddingRight">21dp</item>
         <item name="android:textColor">@color/button_text_color</item>
     </style>
+
+    <!--自定义简洁对话框样式-->
+    <style name="CustomDialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
 </resources>

@@ -25,4 +25,29 @@
         <attr name="pivotX" format="fraction"/>
         <attr name="pivotY" format="fraction" />
     </declare-styleable>
+
+    <!--圆形进度条-->
+    <declare-styleable name="CircleProgressBar">
+        <attr name="radius" format="dimension"/>
+        <attr name="stroke_wide" format="dimension"/>
+        <attr name="text_size" format="dimension"/>
+        <attr name="text_color" format="color"/>
+        <attr name="color_stroke" format="color"/>
+        <attr name="color_progress" format="color"/>
+        <attr name="color_inner" format="color"/>
+        <attr name="progress_max" format="integer"/>
+        <attr name="progress" format="integer"/>
+    </declare-styleable>
+
+
+    <!--下载圆环进度条-->
+    <declare-styleable name="CircleProgressView">
+        <attr name="backWidth" format="dimension" />    <!--背景圆环宽度-->
+        <attr name="progWidth" format="dimension" />    <!--进度圆环宽度-->
+        <attr name="backColor" format="color" />        <!--背景圆环颜色-->
+        <attr name="progColor" format="color" />        <!--进度圆环颜色-->
+        <attr name="progStartColor" format="color" />   <!--进度圆环开始颜色-->
+        <attr name="progFirstColor" format="color" />   <!--进度圆环结束颜色-->
+        <attr name="progressForCircle" format="integer" />       <!--圆环进度-->
+    </declare-styleable>
 </resources>
