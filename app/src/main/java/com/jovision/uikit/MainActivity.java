@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ToastKit.showBottomToastSafe(MainActivity.this, "底部toast");
+
             }
         });
     }
