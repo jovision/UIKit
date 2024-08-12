@@ -46,6 +46,29 @@ public class ToastKit {
         }
     }
 
+    /**
+     * 对toast的简易封装。线程安全，可以在非UI线程调用。
+     */
+    public static void showBottomToastSafe(Context context, final String str) {
+        if (isRunInMainThread()) {
+            showBottomToast(context,str);
+        } else {
+            post(new Runnable() {
+                @Override
+                public void run() {
+                    showBottomToast(context,str);
+                }
+            });
+        }
+    }
+
+    public static void showBottomToast(Context context, String str) {
+        if (context != null) {
+            ToastView toastView = new ToastView();
+            toastView.show(str, context);
+        }
+    }
+
 
     // 判断当前的线程是不是在主线程
     private static boolean isRunInMainThread() {
