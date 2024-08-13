@@ -50,4 +50,12 @@
         <attr name="progFirstColor" format="color" />   <!--进度圆环结束颜色-->
         <attr name="progressForCircle" format="integer" />       <!--圆环进度-->
     </declare-styleable>
+
+    <declare-styleable name="RedView">
+        <attr name="redTipsVisibility">
+            <enum name="red_invisible" value="0"></enum>
+            <enum name="red_visible" value="1"></enum>
+            <enum name="red_gone" value="2"></enum>
+        </attr>
+    </declare-styleable>
 </resources>

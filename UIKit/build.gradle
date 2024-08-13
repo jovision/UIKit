@@ -33,6 +33,8 @@ android {
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    implementation 'com.github.jovision:BaseKit:0.0.12'
 }
 
 
